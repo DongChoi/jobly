@@ -9,7 +9,7 @@ import "./CompanyDetails.css";
 /** state: a company object with description and jobs for that company
  * displays the name,description along with the jobs for that company
  */
-function CompanyDetails() {
+function CompanyDetails({ applyJobs }) {
   const { currUser } = useContext(UserContext);
 
   const [companyDetail, setCompanyDetail] = useState({});
@@ -29,13 +29,17 @@ function CompanyDetails() {
     return <h1>Loading...</h1>;
   }
 
+  async function handleApply(evt) {
+    await applyJobs(evt.target.value);
+  }
+
   return (
     <div>
       <h2 className="company-name-h2">{companyDetail.name}</h2>
       <p className="company-description-p">{companyDetail.description}</p>
       <div>
         {companyDetail.jobs.map((job) => {
-          return <JobCard key={uuid()} job={job} />;
+          return <JobCard handleApply={handleApply} key={job.id} job={job} />;
         })}
       </div>
     </div>

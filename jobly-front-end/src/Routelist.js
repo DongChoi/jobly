@@ -22,7 +22,10 @@ function RouteList({ login, register, updateUser, applyJobs }) {
 
           <Route path="/jobs" element={<Jobs applyJobs={applyJobs} />} />
 
-          <Route path="/companies/:handle" element={<CompanyDetails />} />
+          <Route
+            path="/companies/:handle"
+            element={<CompanyDetails applyJobs={applyJobs} />}
+          />
 
           <Route
             path="/profile"
@@ -32,12 +35,10 @@ function RouteList({ login, register, updateUser, applyJobs }) {
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </>
-    )
-  }
-  else {
+    );
+  } else {
     return (
       <Routes>
-
         <Route path="/" element={<Homepage />} />
 
         <Route path="/login" element={<LoginForm login={login} />} />
@@ -45,9 +46,8 @@ function RouteList({ login, register, updateUser, applyJobs }) {
         <Route path="/signup" element={<RegisterForm register={register} />} />
 
         <Route path="*" element={<Navigate to="/" />} />
-
       </Routes>
-    )
+    );
   }
 }
 

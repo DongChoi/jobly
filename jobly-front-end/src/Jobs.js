@@ -50,7 +50,7 @@ function Jobs({ applyJobs }) {
   async function handleApply(evt) {
     await applyJobs(evt.target.value);
   }
-
+  console.log(handleApply);
   return (
     <div>
       <Form search={search} />
