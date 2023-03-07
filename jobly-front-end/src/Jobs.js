@@ -23,7 +23,6 @@ function Jobs({ applyJobs }) {
 
   useEffect(() => {
     async function getJobs() {
-      console.log("searchQuery =", searchQuery);
       const resp = await JoblyApi.getJobs(searchQuery);
       setJobs({
         jobData: resp,
@@ -50,7 +49,6 @@ function Jobs({ applyJobs }) {
   async function handleApply(evt) {
     await applyJobs(evt.target.value);
   }
-  console.log(handleApply);
   return (
     <div>
       <Form search={search} />

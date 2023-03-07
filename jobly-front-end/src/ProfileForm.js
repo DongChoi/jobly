@@ -8,7 +8,7 @@ import "./ProfileForm.css";
  */
 function ProfileForm({ updateUser }) {
   const { currUser } = useContext(UserContext);
-  console.log("what is curruser", currUser);
+
   const [errorMsg, setErrorMsg] = useState([]);
   const initialFormData = {
     userData: {
@@ -34,7 +34,6 @@ function ProfileForm({ updateUser }) {
   /** Call parent function to update.*/
   async function handleSubmit(evt) {
     evt.preventDefault();
-    console.log("CURRUSER BEFORE UPDATE", currUser);
     let userData = { ...formData.userData };
     delete userData.username;
 

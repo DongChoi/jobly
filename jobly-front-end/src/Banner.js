@@ -14,14 +14,18 @@ function Banner() {
           <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <h2>Jobly</h2>
             {currUser ? (
-              <p>Welcome Back {currUser.username} </p>
+              <p>Welcome Back {currUser.firstName} </p>
             ) : (
               <div>
                 <h5>All the jobs in one, convenient place. </h5>
                 <div>
                   <span>
-                    <Link className="btn btn-primary" to="login">Log in</Link>{" "}
-                    <Link className="btn btn-primary" to="signup">Signup</Link>
+                    <Link className="btn btn-primary" to="login">
+                      Log in
+                    </Link>{" "}
+                    <Link className="btn btn-primary" to="signup">
+                      Signup
+                    </Link>
                   </span>
                 </div>
               </div>

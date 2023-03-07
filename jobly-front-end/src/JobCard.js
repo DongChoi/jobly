@@ -7,10 +7,8 @@ import "./Card.css";
 function JobCard({ job, handleApply, isDisabled }) {
   const { hasAppliedtoJob } = useContext(UserContext);
   const [apply, setApply] = useState(hasAppliedtoJob(job.id));
-  console.log(handleApply);
   async function handleSubmit(evt) {
     evt.preventDefault();
-    console.log(evt.target);
     await handleApply(evt);
     setApply(true);
   }

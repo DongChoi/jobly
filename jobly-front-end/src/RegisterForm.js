@@ -26,7 +26,6 @@ function RegisterForm({ register }) {
 
   /** Call parent function and clear form. */
   async function handleSubmit(evt) {
-    console.log("formdata handling in the register", formData);
     evt.preventDefault();
     try {
       await register(formData);

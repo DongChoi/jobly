@@ -17,7 +17,6 @@ function App() {
         if (token) {
           localStorage.setItem("token", token);
           let user = await getCurrUserFromToken(token);
-          console.log("curr usser state:", user);
           setcurrUser(user);
         } else {
           localStorage.removeItem("token");
@@ -46,14 +45,12 @@ function App() {
   async function updateUser(formData, username) {
     const resp = await JoblyApi.updateUser(formData, username);
     setcurrUser(resp);
-    console.log("CURRENT USER AFTER UPDATE", currUser);
   }
 
   //calls api to get current user from token from backend
   async function getCurrUserFromToken(token) {
     let user = jwt_decode(token);
     JoblyApi.token = token;
-    console.log("user", user);
     const currUser = await JoblyApi.getCurrUser(user.username);
     if (!currUser.applications) {
       currUser.applications = [];
@@ -68,7 +65,6 @@ function App() {
       ...user,
       applications: [...user.applications, Number(jobId)],
     }));
-    console.log("type of ", currUser.applications);
     // return resp;
   }
 
