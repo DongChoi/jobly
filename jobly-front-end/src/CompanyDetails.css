@@ -1,0 +1,12 @@
+.company-name-h2{
+    margin-top: 1em;
+    color:aliceblue;
+    text-align: center;
+}
+.company-description-p{
+    color: aliceblue;
+    text-align:left;
+    position:relative;
+    left: 23%;
+    width: 50%
+}

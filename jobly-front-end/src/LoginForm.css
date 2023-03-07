@@ -1,0 +1,15 @@
+.loginContainer {
+ text-align: center;
+ margin-top: 3%;
+}
+
+.loginForm-Btn {
+    margin: 0 1em;
+    margin-bottom: 1em;
+}
+
+.login-h2 {
+    text-align: center;
+    color: aliceblue;
+    margin-top: .7em;
+}
