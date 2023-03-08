@@ -2,25 +2,36 @@
 
 Jobly is a web-based job search application that utilizes React for the front-end, an Express RESTful API for the back-end, and a PostgreSQL database for data storage. The API provides full CRUD functionality for companies, jobs, and users, with the ability to filter by custom queries. Authentication and authorization are implemented using JSON Web Tokens (JWT) for secure access to protected resources on both the front-end and back-end.
 
-![Home page](./public/screenshots/HomePage.png "Homepage")
 ### Home Page
-![log in ](./public/screenshots/Login.png "Log in")
+
+![Home page](./public/screenshots/HomePage.png "Homepage")
+
 ### Log In
 - Used one way hashing authenticating users and used useContext for user information throughout the application
-![sign up](./public/screenshots/SignUp.png "Sign up")
+![log in ](./public/screenshots/Login.png "Log in")
+
 ### Sign Up
 - Registered with hashed passwords to securely store them in the database
-![Companies List](./public/screenshots/CompaniesList.png "Companies List")
+
+![sign up](./public/screenshots/SignUp.png "Sign up")
+
 ### Companies List
 - Company State is decalred in the top level
 - Company card can be clicked for detailed information and renders job components to show company's job postings
-![Jobs List](./public/screenshots/JobsList.png "Jobs List")
+
+![Companies List](./public/screenshots/CompaniesList.png "Companies List")
+
 ### Jobs List
 - Using useContext for user info to show if they have previously applied to the job posting
-![update Profile](./public/screenshots/updateProfileForm.png "update Profile")
+
+![Jobs List](./public/screenshots/JobsList.png "Jobs List")
+
 ### User Info Update
 - Using Patch requests and JWT, we authN and authZ the request with JWT and 
 Jobly is a web-based job search application that utilizes React for the front-end, an Express RESTful API for the back-end, and a PostgreSQL database for data storage. The API provides full CRUD functionality for companies, jobs, and users, with the ability to filter by custom queries. Authentication and authorization are implemented using JSON Web Tokens (JWT) for secure access to protected resources on both the front-end and back-end.
+
+![update Profile](./public/screenshots/updateProfileForm.png "update Profile")
+
 
 
 
