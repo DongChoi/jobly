@@ -1,13 +1,25 @@
 # Jobly
 
-![Home page](./public/screenshots/HomePage.png "Homepage")
-![log in ](./public/screenshots/Login.png "Log in")
-![sign up](./public/screenshots/SignUp.png "Sign up")
-![Home Page after log in](./public/screenshots/HomePage_loggedIn.png "AuthN Home Page")
-![Companies List](./public/screenshots/CompaniesList.png "Companies List")
-![Jobs List](./public/screenshots/JobsList.png "Jobs List")
-![update Profile](./public/screenshots/updateProfileForm.png "update Profile")
+Jobly is a web-based job search application that utilizes React for the front-end, an Express RESTful API for the back-end, and a PostgreSQL database for data storage. The API provides full CRUD functionality for companies, jobs, and users, with the ability to filter by custom queries. Authentication and authorization are implemented using JSON Web Tokens (JWT) for secure access to protected resources on both the front-end and back-end.
 
+![Home page](./public/screenshots/HomePage.png "Homepage")
+### Home Page
+![log in ](./public/screenshots/Login.png "Log in")
+### Log In
+- Used one way hashing authenticating users and used useContext for user information throughout the application
+![sign up](./public/screenshots/SignUp.png "Sign up")
+### Sign Up
+- Registered with hashed passwords to securely store them in the database
+![Companies List](./public/screenshots/CompaniesList.png "Companies List")
+### Companies List
+- Company State is decalred in the top level
+- Company card can be clicked for detailed information and renders job components to show company's job postings
+![Jobs List](./public/screenshots/JobsList.png "Jobs List")
+### Jobs List
+- Using useContext for user info to show if they have previously applied to the job posting
+![update Profile](./public/screenshots/updateProfileForm.png "update Profile")
+### User Info Update
+- Using Patch requests and JWT, we authN and authZ the request with JWT and 
 Jobly is a web-based job search application that utilizes React for the front-end, an Express RESTful API for the back-end, and a PostgreSQL database for data storage. The API provides full CRUD functionality for companies, jobs, and users, with the ability to filter by custom queries. Authentication and authorization are implemented using JSON Web Tokens (JWT) for secure access to protected resources on both the front-end and back-end.
 
 
