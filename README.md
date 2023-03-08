@@ -8,10 +8,13 @@ Jobly is a web-based job search application that utilizes React for the front-en
 
 ### Log In
 - Used one way hashing authenticating users and used useContext for user information throughout the application
+
+
 ![log in ](./public/screenshots/Login.png "Log in")
 
 ### Sign Up
 - Registered with hashed passwords to securely store them in the database
+
 
 ![sign up](./public/screenshots/SignUp.png "Sign up")
 
@@ -19,12 +22,16 @@ Jobly is a web-based job search application that utilizes React for the front-en
 - Company State is decalred in the top level
 - Company card can be clicked for detailed information and renders job components to show company's job postings
 
+
 ![Companies List](./public/screenshots/CompaniesList.png "Companies List")
 
 ### Jobs List
 - Using useContext for user info to show if they have previously applied to the job posting
 
+
 ![Jobs List](./public/screenshots/JobsList.png "Jobs List")
+
+
 
 ### User Info Update
 - Using Patch requests and JWT, we authN and authZ the request with JWT and 
