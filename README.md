@@ -77,8 +77,11 @@ _The backend code used in this application was provided by [Rithm School](https:
 - As user types in the search bar, the company and job listings are updated.
 
 # Instructions
+1. To start using this app you first need to clone the repository:
 
-1. In the command line, navigate into front-end and back-end folder 
+git clone git@github.com:DongChoi/jobly.git
+
+2. In the command line, navigate into front-end and back-end folder 
    in two different tabs and enter the commands for the next two steps
-2. To install dependencies - npm install
-3. To start application - npm start
+3. To install dependencies - npm install
+4. To start application - npm start
