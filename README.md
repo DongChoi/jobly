@@ -2,6 +2,10 @@
 
 Jobly is a web-based job search application that utilizes React for the front-end, an Express RESTful API for the back-end, and a PostgreSQL database for data storage. The API provides full CRUD functionality for companies, jobs, and users, with the ability to filter by custom queries. Authentication and authorization are implemented using JSON Web Tokens (JWT) for secure access to protected resources on both the front-end and back-end.
 
+_The backend code used in this application was provided by [Rithm School](https://www.rithmschool.com/), we built the backend as a separate exercise (code can be found [here](https://github.com/DongChoi/express-jobly)). Pair programmed with [Lynn Cha](https://github.com/lynecha) on this application._
+
+
+
 ### Home Page
 
 ![Home page](./public/screenshots/HomePage.png "Homepage")
@@ -51,7 +55,7 @@ Jobly is a web-based job search application that utilizes React for the front-en
 - PostgreSQL
 - Jest
 
-_The backend code used in this application was provided by [Rithm School](https://www.rithmschool.com/), we built the backend as a separate exercise (code can be found [here](https://github.com/DongChoi/express-jobly)). Pair programmed with [Lynn Cha](https://github.com/lynecha) on this application._
+
 
 ## Available Routes
 
