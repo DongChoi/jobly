@@ -79,9 +79,13 @@ _The backend code used in this application was provided by [Rithm School](https:
 # Instructions
 1. To start using this app you first need to clone the repository:
 
-git clone git@github.com:DongChoi/jobly.git
+   git clone git@github.com:DongChoi/jobly.git
 
 2. In the command line, navigate into front-end and back-end folder 
    in two different tabs and enter the commands for the next two steps
+
+
 3. To install dependencies - npm install
+
+
 4. To start application - npm start
